@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="imagenes/autobus.png">
+    <title>Viví Córdoba</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-brand">
+            <img class="header_logo" src="imagenes/autobus.png" alt="Logo">
+            <h1 class="header_titulo">Viví Córdoba</h1>
+        </div>
+        <!-- Checkbox para controlar el menú hamburguesa -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    
+        <!-- Etiqueta para el menú hamburguesa -->
+        <label for="menu-toggle" class="menu-bars">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="navegacion">
+            <ul class="navegacion_lista">
+                <li class="navegacion__elemento"><a href="#Inicio">Inicio</a></li>
+                <li class="navegacion__elemento"><a href="#nuestros_paquetes">Nuestros Paquetes</a></li>
+                <li class="navegacion__elemento"><a href="#beneficios">Beneficios</a></li>
+                <li class="navegacion__elemento"><a href="#sobre_nosotros">Sobre Nosotros</a></li>
+                <li class="navegacion__elemento"><a href="#contacto">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <nav class="botones">
+            <a href="ingresar.html" alt="logo usuario">
+                <img src="imagenes/icono-usuario.png" alt="" class="imagen_botones">
+            </a>
+            <ul class="botones_lista">
+                <li class="botones_ingresar"><a href="ingresar.html">Ingresar</a></li>
+                <li class="botones_registrar"><a href="registrar.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero -->
+        <seccion class="hero" id="Inicio">
+            <div class="hero_informacion">
+                <h2 class="hero_titulo">Descubre la magia de <strong>Córdoba</strong> con nosotros</h2>
+                <p class="hero_texto">Bienvenido a nuestra empresa de turismo en Córdoba, donde ofrecemos paquetes únicos para explorar la belleza de esta provincia. Desde excursiones culturales hasta aventuras al aire libre, tenemos algo para cada viajero.</p>
+                <div class="hero_botones">
+                    <a href="#nuestros_paquetes" class="hero_boton">Explorar</a>
+                    <a href="#contacto" class="hero_boton">Contáctanos</a>
+                </div>
+            </div>
+            <div class="hero_imagenes"> 
+                <img src="imagenes/foto_hero1.jpg" alt="" class="hero_imagen">
+                <img src="imagenes/foto_hero2.png" alt="" class="hero_imagen">
+                <img src="imagenes/foto_hero3.jpg" alt="" class="hero_imagen">
+                <img src="imagenes/foto_hero4.jpeg" alt="" class="hero_imagen">
+                <img src="imagenes/foto_hero5.jpg" alt="" class="hero_imagen">
+            </div>
+        </seccion>
+        <!-- Sobre nosotros -->
+        <seccion class="sobre_nosotros" id="sobre_nosotros">
+            <h3 class="sobre_nosotros_titulo">Descubre la esencia de nuestra empresa de turismo en Córdoba</h3>
+            <p class="sobre_nosotros_texto">En nuestra empresa, nos dedicamos a ofrecer experiencias únicas en la provincia de Córdoba. Nuestra misión es conectar a los viajeros con la belleza natural y cultural de la región, mientras que nuestra visión es ser líderes en el turismo responsable y sostenible. Nuestros valores se centran en la calidad, el respeto por el medio ambiente y la satisfacción del cliente.</p>
+        </seccion>
+        <!-- Nuestros paquetes -->
+        <seccion class="paquetes" id="nuestros_paquetes">
+            <h4 class="paquetes_titulo">Descubre los encantos de Córdoba con nuestros paquetes turísticos exclusivos.</h4>
+            <article class="paquetes_contenedor">
+                <article class="paquete">
+                    <img src="imagenes/foto_paquetes.jpg" alt="" class="paquete_imagen">
+                    <p class="paquete_titulo">Aventuras inolvidables en la naturaleza y cultura de Córdoba.</p>
+                    <p class="paquete_texto">Explora paisajes únicos y vive experiencias auténticas en cada tour.</p>
+                    <a href="" class="paquete_boton">Ver mas</a>
+                </article>
+                <article class="paquete">
+                    <img src="imagenes/foto_paquetes3.jpg" alt="" class="paquete_imagen">
+                    <p class="paquete_titulo">Escapadas de fin de semana: relájate y recarga energías en Córdoba.</p>
+                    <p class="paquete_texto">Disfruta de una experiencia completa con alojamiento y actividades incluidas.</p>
+                    <a href="" class="paquete_boton">Ver mas</a>
+                </article>
+                <article class="paquete">
+                    <img src="imagenes/foto_paquetes2.jpg" alt="" class="paquete_imagen">
+                    <p class="paquete_titulo">Paquetes familiares: diversión y aventura para grandes y chicos.</p>
+                    <p class="paquete_texto">Crea recuerdos inolvidables con actividades diseñadas para toda la familia.</p>
+                    <a href="" class="paquete_boton">Ver mas</a>
+                </article>
+            </article>
+        </seccion>
+        <!-- Beneficios -->
+        <seccion class="beneficios" id="beneficios">
+            <div class="beneficios_informacion">
+                <h5 class="beneficios_titulo">Descubre los increíbles beneficios de registrarte con nosotros hoy mismo</h5>
+                <p class="beneficios_texto">Al registrarte, recibirás notificaciones exclusivas sobre nuevos paquetes turísticos y descuentos especiales. No te pierdas la oportunidad de explorar Córdoba con las mejores ofertas.</p>
+                <a href="registrar.html" class="beneficios_boton">Registrarse</a>
+            </div>
+            <img src="imagenes/foto_beneficios.jpg" alt="" class="beneficios_imagen">
+        </seccion>
+        <!-- Sección de Contacto -->
+        <section class="contacto" id="contacto">
+            <h6 class="contacto__titulo">Contacto</h6>
+            <form class="contacto__formulario"  method="POST">
+                <input class="contacto__campo" type="text"  placeholder="Nombre" required>
+                <input class="contacto__campo" type="email"  placeholder="Correo Electrónico" required>
+                <textarea class="contacto__campo"  placeholder="Mensaje" required></textarea>
+                <button class="contacto__boton" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="links-footer">
+          <img src="imagenes/autobus.png" alt="" class="footer_logo">
+          <nav>
+            <ul class="nav-footer">
+              <li><a href="#Inicio">Inicio</a></li>
+              <li><a href="#nuestros_paquetes">Nuestros paquetes</a></li>
+              <li><a href="#beneficios">Beneficios</a></li>
+              <li><a href="#sobre_nosotros">Sobre Nosotros</a></li>
+              <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer_derechos">
+          <p>© 2024 Viví Córdoba. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+</body>
+</html>

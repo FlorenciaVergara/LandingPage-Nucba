@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  :root{
+    /*----------- Fuentes-----------*/
+    --FuenteMontserrat: "Montserrat", sans-serif;
+    --FuentePoppins: "Poppins", sans-serif;
+    --FuenteRoboto: "Roboto", sans-serif;
+  }
+
+a {
+    color:#3e1c0a ;
+}
+
+body{
+    background: linear-gradient(to right, #F2C94C, #F2994A); 
+}
+
+.registrar{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registrar_contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 20px;
+    width: 80%;
+}
+
+.registrar_borde_superior{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_salir{
+    width: 16px;
+    cursor: pointer;
+}
+
+.logo_autobus{
+    width: 32px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo_formulario{
+    width: 100px;
+}
+
+.formulario_titulo{
+    font-family: var(--FuenteMontserrat);
+    font-size: 2.5rem;
+}
+
+.formulario_contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.formulario_campos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.formulario_campo{
+    border-radius: 15px; 
+    background-color:#fffbeb;
+    border: 1px solid #e3a316;
+    padding: 15px; 
+    font-family: var(--FuenteRoboto);
+    font-size: 1rem; 
+    width: 90%;
+}
+
+.registrar_boton{
+    background:linear-gradient(45deg, #e3a316, #ecb623);
+    padding: 10px 15px;
+    border-radius: 20px;
+    width: 60%;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px;
+    font-family: var(--FuenteRoboto);
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.ingresar{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.ingresar_texto{
+    font-family: var(--FuenteRoboto);
+    font-size: 1rem;
+}
+
+.ingresar_enlace{
+    background: #fffbeb;
+    border: 1px solid #e3a316;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-family: var(--FuenteRoboto);
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.footer{
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+    font-family: var(--FuentePoppins);
+}
+
+/*----------- Responsive -----------*/
+/*----------- Tablets -----------*/
+@media (min-width:768px){
+    .registrar_contenedor{
+        width: 60%;
+    }
+}
+
+/*----------- Desktop -----------*/
+@media (min-width:1200px){
+    .formulario{
+        flex-direction: row;
+        gap: 40px;
+        padding: 30px;
+    }
+
+    .registrar_contenedor{
+        padding: 30px;
+        width: 50%;
+    }
+
+    .logo_formulario{
+        width: 150px;
+    }
+
+    .registrar_boton{
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    .registrar_boton:hover {
+        background:#fffbeb ;
+    }
+
+    .ingresar{
+        padding: 0;
+    }
+
+    .ingresar_enlace{
+        transition: 0.3s ease;
+    }
+    
+    .ingresar_enlace:hover{
+        background: #e3a316;
+    }
+
+    .footer{
+        position: absolute;
+    }
+}
