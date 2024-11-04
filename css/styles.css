@@ -164,9 +164,9 @@ strong{
 
 .hero_imagenes {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 170px;
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px;
+  gap: 5px;
   width: 100%;
 }
 
@@ -182,10 +182,11 @@ strong{
 
 .hero_imagenes img:nth-child(2) {
   grid-row-start: span 3;
+  grid-column-start: span 2;
 }
 
 .hero_imagenes img:nth-child(4) {
-  grid-column-start: span 3 ;
+  grid-column-start: span 4 ;
   grid-row-start: span 2;
 }
 
@@ -195,7 +196,7 @@ strong{
 }
 
 .hero_imagenes img:nth-child(5) {
-  grid-column-start: span 3;
+  grid-column-start: span 4;
 }
 /*----------- Sobre Nosotros -----------*/
 .sobre_nosotros{
@@ -267,7 +268,6 @@ strong{
 .paquete_imagen{
   border-radius: 20px;
   width: 90%;
-  height: 500px;
   object-fit: cover;
 }
 
@@ -308,7 +308,7 @@ strong{
 
 .beneficios_imagen{
   width: 100%;
-  height: 400px;
+  height: 200px;
   object-fit: cover;
   border-radius:10px ;
 }
@@ -335,13 +335,13 @@ border-bottom:var(--colorPrincipal) 1px solid;
   gap: 15px;
   align-items: center;
   border-radius: 30px;
-  width: 70%;
+  width: 100%;
   background-color: #fef3c7;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .contacto__campo{
-  width: 80%;
+  width: 100%;
   border-radius: 15px; 
   background-color:var(--colorSecundario);
   border: 1px solid var(--colorPrincipal);
@@ -397,6 +397,36 @@ border-bottom:var(--colorPrincipal) 1px solid;
 /*----------- Responsive -----------*/
 /*----------- Tablets -----------*/
 @media (min-width:768px){
+/*----------- Hero -----------*/
+  .hero_imagenes {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 170px;
+    gap: 5px;
+  }
+  
+  .hero_imagenes img:nth-child(1) {
+    grid-row-start: span 2;
+    grid-column-start: span 1;
+  }
+  
+  .hero_imagenes img:nth-child(2) {
+    grid-row-start: span 4;
+    grid-column-start: span 1;
+  }
+  
+  .hero_imagenes img:nth-child(3) {
+    grid-row-start: span 2 ;
+    grid-column-start: span 1;
+  }
+  
+  .hero_imagenes img:nth-child(4) {
+    grid-column-start: span 1;
+  }
+  
+  .hero_imagenes img:nth-child(5) {
+    grid-row-start: span 2 ;
+    grid-column-start: span 1;
+  }
 /*----------- Sobre Nosotros -----------*/
 .sobre_nosotros{
   display: flex;
@@ -418,6 +448,7 @@ border-bottom:var(--colorPrincipal) 1px solid;
 
 .paquete_imagen{
   height: 300px;
+  width: 300px;
 }
 
 .paquetes_contenedor{
@@ -434,6 +465,13 @@ border-bottom:var(--colorPrincipal) 1px solid;
 
 .beneficios_imagen{
   width: 50%;
+  height: 300px;
+  align-self: center;
+}
+
+/*----------- Contacto -----------*/
+.contacto__formulario{
+  width: 70%;
 }
 
 /*----------- Footer -----------*/
@@ -444,29 +482,6 @@ border-bottom:var(--colorPrincipal) 1px solid;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 60px;
-}
-
-.hero_imagenes img:nth-child(1) {
-  grid-row-start: span 2;
-  grid-column-start: span 1;
-}
-
-.hero_imagenes img:nth-child(2) {
-  grid-row-start: span 4;
-}
-
-.hero_imagenes img:nth-child(3) {
-  grid-row-start: span 2 ;
-  grid-column-start: span 1;
-}
-
-.hero_imagenes img:nth-child(4) {
-  grid-column-start: span 1;
-}
-
-.hero_imagenes img:nth-child(5) {
-  grid-row-start: span 2 ;
-  grid-column-start: span 1;
 }
 
 }
@@ -619,6 +634,10 @@ border-bottom:var(--colorPrincipal) 1px solid;
   padding: 50px 30px;
   width: 50%; 
   gap: 25px;
+}
+
+.contacto__campo{
+  width: 80%;
 }
 
 .contacto__boton{
