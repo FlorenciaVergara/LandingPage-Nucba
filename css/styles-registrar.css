@@ -196,8 +196,4 @@ body{
     .ingresar_enlace:hover{
         background: #e3a316;
     }
-
-    .footer{
-        position: absolute;
-    }
 }

@@ -210,8 +210,4 @@ body{
     .registrar_enlace:hover{
         text-decoration: underline;
     }
-
-    .footer{
-        position: absolute;
-    }
 }
